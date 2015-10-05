@@ -31,6 +31,8 @@ public class Main {
         generateReport("TEMPLATE_OK_DO_NOT_EDIT.docx", "target/report_generated_with_TEMPLATE_OK_DO_NOT_EDIT.docx");
         // edit the template TEMPLATE_OK_EDIT_TO_FAIL_PARSING and save it => it will fail
         generateReport("TEMPLATE_OK_EDIT_TO_FAIL_PARSING.docx", "target/report_generated_with_TEMPLATE_OK_EDIT_TO_FAIL_PARSING.docx");
+        // TEMPLATE_OK_DO_NOT_EDIT opened and saved with word 2010, I removed at lot of stuff to reduce the template size and have a good understanding of the problem
+        generateReport("TEMPLATE_FAIL_LESS.docx", "target/report_generated_with_TEMPLATE_FAIL.docx");
         // TEMPLATE_OK_DO_NOT_EDIT opened and saved with word 2010 => it will fail
         generateReport("TEMPLATE_FAIL.docx", "target/report_generated_with_TEMPLATE_FAIL.docx");
     }
