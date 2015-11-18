@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://W://XDOCREPORT-WORD-ISSUE/XDOCREPORT-WORD-ISSUE.iml" filepath="W://XDOCREPORT-WORD-ISSUE/XDOCREPORT-WORD-ISSUE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/word-issue.iml" filepath="$PROJECT_DIR$/word-issue.iml" />
     </modules>
   </component>
 </project>

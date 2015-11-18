@@ -11,12 +11,15 @@
  */
 
 import fr.opensagres.xdocreport.core.XDocReportException;
+import fr.opensagres.xdocreport.core.document.SyntaxKind;
 import fr.opensagres.xdocreport.document.IXDocReport;
 import fr.opensagres.xdocreport.document.registry.XDocReportRegistry;
 import fr.opensagres.xdocreport.template.IContext;
 import fr.opensagres.xdocreport.template.TemplateEngineKind;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -28,13 +31,7 @@ public class Main {
 
     public static void main(String[] args) {
         // will be ok
-        generateReport("TEMPLATE_OK_DO_NOT_EDIT.docx", "target/report_generated_with_TEMPLATE_OK_DO_NOT_EDIT.docx");
-        // edit the template TEMPLATE_OK_EDIT_TO_FAIL_PARSING and save it => it will fail
-        generateReport("TEMPLATE_OK_EDIT_TO_FAIL_PARSING.docx", "target/report_generated_with_TEMPLATE_OK_EDIT_TO_FAIL_PARSING.docx");
-        // TEMPLATE_OK_DO_NOT_EDIT opened and saved with word 2010, I removed at lot of stuff to reduce the template size and have a good understanding of the problem
-        generateReport("TEMPLATE_FAIL_LESS.docx", "target/report_generated_with_TEMPLATE_FAIL.docx");
-        // TEMPLATE_OK_DO_NOT_EDIT opened and saved with word 2010 => it will fail
-        generateReport("TEMPLATE_FAIL.docx", "target/report_generated_with_TEMPLATE_FAIL.docx");
+       generateReport("html_loop.docx", "target/report.docx");
     }
 
     private static void generateReport(String templateFileName, String outputFileName) {
@@ -45,9 +42,13 @@ public class Main {
 
             // 2) Create context Java model
             IContext context = report.createContext();
-            FakeTemplateContext fakeReportContext = new FakeTemplateContext();
-            fakeReportContext.fillContext(context);
-            fakeReportContext.fillFieldsMetadata(report.createFieldsMetadata());
+            List list = new ArrayList();
+            list.add("<h1>Test H1</h1>");
+            list.add("<h2>Test H2</h2>");
+            context.put("htmls", list);
+            context.put("htmlOutsideLoop","<h1>Outside loop</h1>");
+            report.createFieldsMetadata().addFieldAsTextStyling("htmlOutsideLoop", SyntaxKind.Html);
+            report.createFieldsMetadata().addFieldAsTextStyling("htmlInsideLoop", SyntaxKind.Html);
 
 
             // 3) Generate report by merging Java model with the Docx

@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/FakeSamplingReportContext.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/FakeSynthesisReportContext.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/FakeTemplateContext.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/FakeTemplateContextDelegator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ZoneSampling.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ZoneSynthesis.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/BigDecimalFormat.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/BooleanFormat.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/DateFormat.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/DocumentsConvert.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/NumberFormat.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/formatter/ReportDeviceUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/TEMPLATE_FAIL.docx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/TEMPLATE_OK_DO_NOT_EDIT.docx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/TEMPLATE_OK_EDIT_TO_FAIL_PARSING.docx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/template_ok.docx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/template_ok.docx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/TEMPLATE_FAIL_2.docx" charset="ISO-8859-1" />
   </component>
 </project>

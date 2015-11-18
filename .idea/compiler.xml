@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="XDOCREPORT-WORD-ISSUE" />
+        <module name="word-issue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="XDOCREPORT-WORD-ISSUE" target="1.5" />
+      <module name="word-issue" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
